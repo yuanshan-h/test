@@ -29,5 +29,5 @@ port = 12345
 client.connect((host,port))     #建立连接
 message="连接成功"
 client.send(message.encode("utf-8"))    #发送信息 并将信息编译成python3能读懂的byte流
-print(client.recv(1024).decode())   #解码收到的信息并打印出来
+print(client.recv(1024).decode())    #解码收到的信息并打印出来
 client.close()
